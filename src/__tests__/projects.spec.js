@@ -12,7 +12,7 @@ describe("Projects", () => {
         techs: ["Node", "Express", "TypeScript"]
       });
 
-    expect(isUuid(response.body.id)).toBe(true);
+      expect(isUuid(response.body.id)).toBe(true);
 
     expect(response.body).toMatchObject({
       url: "https://github.com/Rocketseat/umbriel",
@@ -20,6 +20,7 @@ describe("Projects", () => {
       techs: ["Node", "Express", "TypeScript"],
       likes: 0
     });
+  
   });
 
   it("should be able to list the projects", async () => {
